@@ -14,7 +14,7 @@ function ParentComponent() {
 
     const fetchBooks = () => {
         // Fetch books from API
-        fetch("http://localhost:7000/book/all")
+        fetch("https://book-review-backend-gx5r.onrender.com/book/all")
             .then((res) => res.json())
             .then((result) => {
                 // Set books state with fetched data

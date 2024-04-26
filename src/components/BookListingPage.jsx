@@ -6,7 +6,7 @@ function BookListingPage() {
     const [selectedBook, setSelectedBook] = useState(null)
 
     const getAllBooks = () => {
-        fetch("http://localhost:7000/book/all")
+        fetch("https://book-review-backend-gx5r.onrender.com/book/all")
             .then((res) => res.json())
             .then((result) => {
                 // Add isFavorite property to each book
